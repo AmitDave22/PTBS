@@ -1,41 +1,29 @@
 public abstract class Person {
 
-    int type = 0;
-    String UserName;
-    ClassProductList classProductList;
-    ProductMenu productMenu;
-    Product currentProduct;
+	private ProductMenu theProductMenu;
 
-    Person() {
-        classProductList = new ClassProductList();
-    }
+	public void showMenu() {
 
-    private ProductMenu theProductMenu;
+	}
 
-    public void showMenu() {
+	public void showAddButton() {
 
-    }
+	}
 
-    public void showAddButton() {
+	public void showViewButton() {
 
-    }
+	}
 
-    public void showViewButton() {
+	public void showRadioButton() {
 
-    }
+	}
 
-    public void showRadioButton() {
+	public void showLabels() {
 
-    }
+	}
 
-    public void showLabels() {
+	public ProductMenu CreateProductMenu() {
+		return null;
+	}
 
-    }
-
-    public ProductMenu CreateProductMenu() {
-        return null;
-    }
-
-    public void addProduct(Product theSelectedProduct) {
-    }
 }
