@@ -1,4 +1,4 @@
-class UserInfoItem {
+class UserInfoItem { //Iterator Design Pattern
 
     UserInfoItem(){
         UserType = USER_TYPE.Buyer;
