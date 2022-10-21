@@ -1,70 +1,36 @@
-public class Facade {
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.util.ArrayList;
 
-    private Login login = new Login();
+public class ClassProductList extends ArrayList<Product> { // Facade Design Pattern as in the Class Diagram
 
-    private int UserType;
+    ClassProductList() {
+        InitializeFromFile();
+    }
 
-    private Product theSelectedProduct;
-
-    private int nProductCategory;
-
-    private ClassProductList theProductList;
-
-    private Person thePerson;
-
-    public boolean login(UserInfoItem userInfoItem) {
-        if(login.getLogin())
-        {
-            userInfoItem.UserType = login.getUserType();
-            userInfoItem.strUserName = login.getUname();
-            return true;
+    void InitializeFromFile() {
+        try {
+            String data[];
+            System.out.println("Successfully initialized the file. ");
+            BufferedReader file;
+            String productName, productCategory, line;
+            int i = 0;
+            file = new BufferedReader(new FileReader("ProductInfo.txt"));
+            while ((line = file.readLine()) != null) {
+                data = line.split(":");
+                productCategory = data[0];
+                productName = data[1];
+                Product theProduct = new Product(productCategory, productName);
+                theProduct.setId(i);
+                i++;
+                add(theProduct);
+            }
+        } catch (Exception ignored) {
         }
-        else {
-            return false;
-        }
-
     }
 
-    public void addTrading(Product product) {
-        Trading trading;
-
-
-    }
-
-    public void viewTrading() {
-
-    }
-
-    public void decideBidding() {
-
-    }
-
-    public void discussBidding() {
-
-    }
-
-    public void remind() {
-
-    }
-
-    public void createUser(UserInfoItem userinfoitem) {
-
-    }
-
-    public void createProductList() {
-
-    }
-
-    public void AttachProductToUser() {
-
-    }
-
-    public void SelectProduct() {
-
-    }
-
-    public void productOperation() {
-
+    public void accept(NodeVisitor visitor) {
+        visitor.visitClassProductList(this);
     }
 
 }
