@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Facade
+comment1.params=userInfoItem
+comment1.target=boolean\ login(UserInfoItem)
+comment10.params=
+comment10.target=void\ SelectProduct()
+comment11.params=
+comment11.target=void\ productOperation()
+comment2.params=product
+comment2.target=void\ addTrading(Product)
+comment3.params=
+comment3.target=void\ viewTrading()
+comment4.params=
+comment4.target=void\ decideBidding()
+comment5.params=
+comment5.target=void\ discussBidding()
+comment6.params=
+comment6.target=void\ remind()
+comment7.params=userinfoitem
+comment7.target=void\ createUser(UserInfoItem)
+comment8.params=
+comment8.target=void\ createProductList()
+comment9.params=
+comment9.target=void\ AttachProductToUser()
+numComments=12

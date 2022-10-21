@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=ReminderVisitor
+comment1.params=trading
+comment1.target=void\ visitTrading(Trading)
+numComments=2

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=NodeVisitor
+comment1.params=product
+comment1.target=void\ visitProduct(Product)
+comment2.params=trading
+comment2.target=void\ visitTrading(Trading)
+numComments=3

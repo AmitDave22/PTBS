@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=MeatProductMenu
+comment1.params=
+comment1.target=void\ showMenu()
+comment2.params=
+comment2.target=void\ showAddButton()
+comment3.params=
+comment3.target=void\ showViewButton()
+comment4.params=
+comment4.target=void\ showRadioButton()
+comment5.params=
+comment5.target=void\ showLabels()
+comment6.params=
+comment6.target=void\ showComboxes()
+numComments=7

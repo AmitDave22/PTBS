@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ProductIterator
+comment1.params=
+comment1.target=boolean\ hasNext()
+comment2.params=
+comment2.target=void\ MoveToHead()
+comment3.params=
+comment3.target=void\ Remove()
+numComments=4

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Login
+comment1.params=
+comment1.target=boolean\ getLogin()
+comment2.params=uname\ pwd\ role
+comment2.target=boolean\ checkUser(java.lang.String,\ java.lang.String,\ int)
+comment3.params=
+comment3.target=UserInfoItem.USER_TYPE\ getUserType()
+comment4.params=
+comment4.target=int\ getUser_type()
+comment5.params=
+comment5.target=java.lang.String\ getUname()
+numComments=6

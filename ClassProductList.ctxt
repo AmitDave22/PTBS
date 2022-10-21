@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=ClassProductList
+comment1.params=visitor
+comment1.target=void\ accept(NodeVisitor)
+numComments=2
