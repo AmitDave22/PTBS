@@ -1,11 +1,12 @@
-public class PTBS{
-    static Facade facade_obj = new Facade();
-    static UserInfoItem user_obj = new UserInfoItem();
+public class PTBS {
+    static Facade facade = new Facade();
+    static Login login = new Login();
+    static UserInfoItem userInfoItem = new UserInfoItem();
     public static void main(String[] args) {
-        
-        if(facade_obj.login(user_obj))
+        if(facade.login(userInfoItem))
         {
-            System.out.println("Successfully logged in as a "+user_obj.UserType+"!");
+            System.out.println("Login Successful " + userInfoItem.UserType);
+            facade.productOperation(userInfoItem);
         }
 
     }
